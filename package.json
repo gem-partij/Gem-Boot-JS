@@ -1,0 +1,40 @@
+{
+	"name": "gem-boot-js",
+	"version": "1.0.0",
+	"description": "Gem Boot JS (ExpressJS Boilerplate)",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node index.js"
+	},
+	"keywords": [
+		"gembootjs",
+		"nodejs",
+		"expressjs"
+	],
+	"author": "Angger Priyardhan Putro",
+	"license": "ISC",
+	"dependencies": {
+		"axios": "^0.18.0",
+		"bcryptjs": "^2.4.3",
+		"body-parser": "^1.19.0",
+		"compression": "^1.7.4",
+		"config": "^3.1.0",
+		"debug": "^4.1.1",
+		"dotenv": "^8.0.0",
+		"express": "^4.17.0",
+		"helmet": "^3.18.0",
+		"jsonwebtoken": "^8.5.1",
+		"knex": "^0.16.5",
+		"morgan": "^1.9.1",
+		"mysql": "^2.17.1",
+		"mysql2": "^1.6.5",
+		"sequelize": "^5.8.6"
+	},
+	"devDependencies": {
+		"nodemon": "^1.19.0"
+	},
+	"engines": {
+		"node": "10"
+	}
+}
