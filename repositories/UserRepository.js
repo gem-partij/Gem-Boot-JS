@@ -1,9 +1,7 @@
 const debug = require("debug")("app:db");
 const bcrypt = require("bcryptjs");
 
-const CrudRepository = require.main.require(
-	"./repositories/abstract/CrudRepository"
-);
+const CrudRepository = require.main.require("./core/CrudRepository");
 const model = require.main.require("./models/User");
 
 class UserRepository extends CrudRepository {

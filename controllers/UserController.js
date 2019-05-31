@@ -1,6 +1,4 @@
-const CrudController = require.main.require(
-	"./controllers/abstract/CrudController"
-);
+const CrudController = require.main.require("./core/CrudController");
 const UserRepository = require.main.require("./repositories/UserRepository");
 
 class UserController extends CrudController {
