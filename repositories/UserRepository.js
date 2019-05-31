@@ -1,8 +1,8 @@
 const debug = require("debug")("app:db");
 const bcrypt = require("bcryptjs");
 
-const CrudRepository = require.main.require("./core/CrudRepository");
-const model = require.main.require("./models/User");
+const CrudRepository = require("@gemboot/CrudRepository");
+const model = require("@model/User");
 
 class UserRepository extends CrudRepository {
 	constructor() {

@@ -1,10 +1,10 @@
 var express = require("express");
 var router = express.Router();
 
-const auth = require.main.require("./middleware/CheckAuthentication");
+const auth = require("@middleware/CheckAuthentication");
 
-const AuthController = require.main.require("./controllers/AuthController");
-const UserController = require.main.require("./controllers/UserController");
+const AuthController = require("@controller/AuthController");
+const UserController = require("@controller/UserController");
 
 router.get("/", auth, (req, res) => {
 	new UserController().index(req, res);

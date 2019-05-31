@@ -1,4 +1,4 @@
-const auth = require.main.require("./middleware/CheckAuthentication");
+const auth = require("@middleware/CheckAuthentication");
 
 class RouterLib {
 	constructor(router) {
@@ -6,7 +6,7 @@ class RouterLib {
 	}
 
 	crud(path, controllerPath) {
-		const Controller = require.main.require(controllerPath);
+		const Controller = require(controllerPath);
 
 		this.router.get(path + "/", auth, (req, res) => {
 			new Controller().index(req, res);
