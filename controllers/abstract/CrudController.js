@@ -58,7 +58,7 @@ class CrudController {
 	// POST /
 	store(req, res) {
 		this.repo
-			.insert(res.body)
+			.insert(req.body)
 			.then(response => {
 				res.send(JSON.stringify(response));
 			})
@@ -69,12 +69,34 @@ class CrudController {
 
 	// PATCH /:id
 	update(req, res) {
-		res.send("OK");
+		if (req.params.id) {
+			this.repo
+				.update(req.body, req.params.id)
+				.then(response => {
+					res.send(JSON.stringify(response));
+				})
+				.catch(err => {
+					res.status(500).send(err.message);
+				});
+		} else {
+			res.status(400).send("Required params");
+		}
 	}
 
 	// DELETE /:id
 	destroy(req, res) {
-		res.send("OK");
+		if (req.params.id) {
+			this.repo
+				.delete(req.params.id)
+				.then(response => {
+					res.send(JSON.stringify(response));
+				})
+				.catch(err => {
+					res.status(500).send(err.message);
+				});
+		} else {
+			res.status(400).send("Required params");
+		}
 	}
 }
 
