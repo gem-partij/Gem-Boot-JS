@@ -3,8 +3,8 @@ var router = express.Router();
 
 const auth = require("@middleware/CheckAuthentication");
 
-const AuthController = require("@controller/AuthController");
-const UserController = require("@controller/UserController");
+const AuthController = require("@controllers/AuthController");
+const UserController = require("@controllers/UserController");
 
 router.get("/", auth, (req, res) => {
 	new UserController().index(req, res);

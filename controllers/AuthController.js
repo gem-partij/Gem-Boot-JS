@@ -1,4 +1,4 @@
-const authService = require("@service/AuthService");
+const authService = require("@services/AuthService");
 const jwt = require("jsonwebtoken");
 
 const register = (req, res) => {

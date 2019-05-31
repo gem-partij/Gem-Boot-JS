@@ -1,5 +1,5 @@
 const CrudController = require("@gemboot/CrudController");
-const UserRepository = require("@repository/UserRepository");
+const UserRepository = require("@repositories/UserRepository");
 
 class UserController extends CrudController {
 	constructor() {

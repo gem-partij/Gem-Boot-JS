@@ -41,11 +41,11 @@
 		"@root": ".",
 		"@gemboot": "core",
 		"@config": "config",
-		"@controller": "controllers",
-		"@library": "libraries",
+		"@controllers": "controllers",
 		"@middleware": "middleware",
-		"@model": "models",
-		"@repository": "repositories",
-		"@service": "services"
+		"@models": "models",
+		"@repositories": "repositories",
+		"@services": "services",
+		"@utils": "utils"
 	}
 }

@@ -1,6 +1,6 @@
 const auth = require("@middleware/CheckAuthentication");
 
-class RouterLib {
+class GBRouter {
 	constructor(router) {
 		this.router = router;
 	}
@@ -26,4 +26,4 @@ class RouterLib {
 	}
 }
 
-module.exports = RouterLib;
+module.exports = GBRouter;

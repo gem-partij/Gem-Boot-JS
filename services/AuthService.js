@@ -1,5 +1,5 @@
-const UserRepository = require("@repository/UserRepository");
-const jwt = require("@library/jwt");
+const UserRepository = require("@repositories/UserRepository");
+const jwt = require("@utils/jwt");
 const bcrypt = require("bcryptjs");
 
 const userRepo = new UserRepository();

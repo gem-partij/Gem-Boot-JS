@@ -1,5 +1,5 @@
 const Sequelize = require("sequelize");
-const db = require("@library/database").sequelize;
+const db = require("@utils/database").sequelize;
 
 const tableName = "users";
 const attributes = {
