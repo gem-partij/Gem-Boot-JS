@@ -22,6 +22,7 @@
 		"debug": "^4.1.1",
 		"dotenv": "^8.0.0",
 		"express": "^4.17.0",
+		"gemboot": "^1.0.0",
 		"helmet": "^3.18.0",
 		"jsonwebtoken": "^8.5.1",
 		"knex": "^0.16.5",
@@ -39,7 +40,6 @@
 	},
 	"_moduleAliases": {
 		"@root": ".",
-		"@gemboot": "core",
 		"@config": "config",
 		"@controllers": "controllers",
 		"@middleware": "middleware",

@@ -11,8 +11,9 @@ router.use((req, res, next) => {
 router.use("/auth", require("./modules/auth"));
 // router.use("/api/user", require("./modules/user"));
 
-const GBRouter = new (require("@utils/GBRouter"))(router);
+const GBRouter = new (require("gemboot")).GBRouter(router);
+const auth = require("@middleware/CheckAuthentication");
 
-GBRouter.crud("/api/user", "@controllers/UserController");
+GBRouter.crud("/api/user", auth, "@controllers/UserController");
 
 module.exports = router;

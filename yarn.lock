@@ -16,9 +16,9 @@
   integrity sha512-6BmYWSBea18+tSjjSC3QIyV93ZKAeNWGM7R6aYt1ryTZXrlHF+QLV0G2yV0viEGVyRkyQsWfMoJ0k/YghBX5sQ==
 
 "@types/node@*":
-  version "12.0.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.0.2.tgz#3452a24edf9fea138b48fad4a0a028a683da1e40"
-  integrity sha512-5tabW/i+9mhrfEOUcLDu2xBPsHJ+X5Orqy9FKpale3SjDA17j5AEpYq5vfy3oAeAHGcvANRCO3NV3d2D6q3NiA==
+  version "12.0.4"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.0.4.tgz#46832183115c904410c275e34cf9403992999c32"
+  integrity sha512-j8YL2C0fXq7IONwl/Ud5Kt0PeXw22zGERt+HSSnwbKOJVsAGkEz3sFCYwaF9IOuoG1HOtE0vKCj6sXF7Q0+Vaw==
 
 abbrev@1:
   version "1.1.1"
@@ -459,9 +459,9 @@ copy-descriptor@^0.1.0:
   integrity sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
 
 core-js@^2.6.5:
-  version "2.6.8"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.8.tgz#dc3a1e633a04267944e0cb850d3880f340248139"
-  integrity sha512-RWlREFU74TEkdXzyl1bka66O3kYp8jeTXrvJZDzVVMH8AiHUSOFpL1yfhQJ+wHocAm1m+4971W1PPzfLuCv1vg==
+  version "2.6.9"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.9.tgz#6b4b214620c834152e179323727fc19741b084f2"
+  integrity sha512-HOpZf6eXmnl7la+cUdMnLvUxKNqLUzJvgIziQ0DiF3JwSImNphIqdGqzj6hIKyX04MmV0poclQ7+wjWvxQyR2A==
 
 core-util-is@~1.0.0:
   version "1.0.2"
@@ -875,6 +875,18 @@ gauge@~2.7.3:
     string-width "^1.0.1"
     strip-ansi "^3.0.1"
     wide-align "^1.1.0"
+
+gemboot@^1.0.0:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/gemboot/-/gemboot-1.0.2.tgz#f039998360be69500287d05c32faadf08ea592bb"
+  integrity sha512-n7bD4vVen3lw+49CSp0YVZ38YUFvvOOKRn9kHVoZGDi5XUs5WGgercNpcSKqK1fuHXtBUGj1u84ievzGLxqvBw==
+  dependencies:
+    debug "^4.1.1"
+    dotenv "^8.0.0"
+    knex "^0.16.5"
+    mysql "^2.17.1"
+    mysql2 "^1.6.5"
+    sequelize "^5.8.6"
 
 generate-function@^2.3.1:
   version "2.3.1"
@@ -2069,9 +2081,9 @@ pseudomap@^1.0.2:
   integrity sha1-8FKijacOYYkX7wqKw0wa5aaChrM=
 
 pstree.remy@^1.1.6:
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/pstree.remy/-/pstree.remy-1.1.6.tgz#73a55aad9e2d95814927131fbf4dc1b62d259f47"
-  integrity sha512-NdF35+QsqD7EgNEI5mkI/X+UwaxVEbQaz9f4IooEmMUv6ZPmlTQYGjBPJGgrlzNdjSvIy4MWMg6Q6vCgBO2K+w==
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/pstree.remy/-/pstree.remy-1.1.7.tgz#c76963a28047ed61542dc361aa26ee55a7fa15f3"
+  integrity sha512-xsMgrUwRpuGskEzBFkH8NmTimbZ5PcPup0LA8JJkHIm2IMUbQcpo3yeLNWVrufEYjh8YwtSVh0xz6UeWc5Oh5A==
 
 qs@6.7.0:
   version "6.7.0"
@@ -2285,9 +2297,9 @@ sequelize-pool@^1.0.2:
     bluebird "^3.5.3"
 
 sequelize@^5.8.6:
-  version "5.8.6"
-  resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-5.8.6.tgz#22cd5b9443fa303552f925f99a08c9a5236f86cb"
-  integrity sha512-u6KJuMBNLAE44PkGUTlevBseb6BV/n5r8CDGmYe1VxcGxdlWXYUiNXlEFEW0OL6ie+yXYV7dnPHa/fDi1M7gMw==
+  version "5.8.7"
+  resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-5.8.7.tgz#3af2fd6051277d5fb5b32054c7f8aac4c4a04107"
+  integrity sha512-1rubZM8fAyCt5ipyS+3HJ3Jbmb8WesLdPJ3jIbTD+78EbuPZILFEA5fK0mliVRBx7oM7oPULeVX0lxSRXBV1jw==
   dependencies:
     bluebird "^3.5.0"
     cls-bluebird "^2.1.0"
