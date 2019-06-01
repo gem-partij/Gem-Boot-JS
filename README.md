@@ -4,20 +4,17 @@ GemBoot is a NodeJS Boilerplate for boosting development time.
 
 ## Installation
 
--   [Yarn](#yarn)
--   [NPM](#npm)
+-   [GemBoot CLI](#gemboot-cli)
 
-### Yarn
+### GemBoot CLI
 
-```bash
-yarn
+```sh-session
+$ npm install -g gemboot-cli
+
+$ gemboot create [PROJECT NAME]
 ```
 
-### NPM
-
-```bash
-npm install
-```
+_More at: [github:gemboot-cli](https://github.com/gem-partij/gemboot-cli/)_
 
 ## Environment file
 
