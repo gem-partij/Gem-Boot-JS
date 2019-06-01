@@ -13,7 +13,7 @@
 		"expressjs"
 	],
 	"author": "Angger Priyardhan Putro",
-	"license": "ISC",
+	"license": "MIT",
 	"dependencies": {
 		"bcryptjs": "^2.4.3",
 		"body-parser": "^1.19.0",
@@ -41,11 +41,12 @@
 	"_moduleAliases": {
 		"@root": ".",
 		"@config": "config",
-		"@controllers": "controllers",
-		"@middleware": "middleware",
-		"@models": "models",
-		"@repositories": "repositories",
-		"@services": "services",
+		"@controllers": "app/controllers",
+		"@models": "app/models",
+		"@repositories": "app/repositories",
+		"@services": "app/services",
+		"@middleware": "routers/middleware",
+		"@routers": "routers",
 		"@utils": "utils"
 	}
 }
