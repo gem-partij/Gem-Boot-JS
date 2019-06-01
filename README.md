@@ -2,11 +2,24 @@
 
 GemBoot is a NodeJS Boilerplate for boosting development time.
 
-## Installation
+-   [Installation](#installation)
+-   [Environment](#environment)
+-   [Migration](#migration)
+
+# Installation
 
 -   [GemBoot CLI](#gemboot-cli)
 
-### GemBoot CLI
+## `GemBoot CLI`
+
+```bash
+  /\/|____  _____  __  __  ____    ___    ___  _____        ____  _      ___  /\/|
+ |/\// ___|| ____||  \/  || __ )  / _ \  / _ \|_   _|      / ___|| |    |_ _||/\/
+    | |  _ |  _|  | |\/| ||  _ \ | | | || | | | | | _____ | |    | |     | |
+    | |_| || |___ | |  | || |_) || |_| || |_| | | ||_____|| |___ | |___  | |
+     \____||_____||_|  |_||____/  \___/  \___/  |_|        \____||_____||___|
+
+```
 
 ```sh-session
 $ npm install -g gemboot-cli
@@ -16,11 +29,11 @@ $ gemboot create [PROJECT NAME]
 
 _More at: [github:gemboot-cli](https://github.com/gem-partij/gemboot-cli/)_
 
-## Environment file
+# Environment
 
 Dont forget to copy .env.dev to .env and fill the environment variables as you need.
 
-## Migration
+# Migration
 
 We're using knex to migrate our migration:
 
