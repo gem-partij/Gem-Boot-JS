@@ -1,7 +1,7 @@
 {
-	"name": "gem-boot-js",
+	"name": "gemboot-framework",
 	"version": "1.0.0",
-	"description": "Gem Boot JS (ExpressJS Boilerplate)",
+	"description": "Gem Boot JS Framework (ExpressJS Boilerplate)",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
