@@ -53,6 +53,14 @@ knex migrate:latest
 
 Make sure your database are set in your .env file
 
+## Code Generator
+
+Use this helper tool for generating controller/model/repository or all of them
+
+```bash
+node partij add
+```
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
