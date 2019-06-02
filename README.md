@@ -2,6 +2,10 @@
 
 GemBoot is a NodeJS Boilerplate for boosting development time.
 
+[![Version](https://img.shields.io/npm/v/gemboot-framework.svg)](https://npmjs.org/package/gemboot-framework)
+[![Downloads/week](https://img.shields.io/npm/dw/gemboot-framework.svg)](https://npmjs.org/package/gemboot-framework)
+[![License](https://img.shields.io/npm/l/gemboot-framework.svg)](https://github.com/gem-partij/gem-boot-js/blob/master/package.json)
+
 -   [Installation](#installation)
 -   [Environment](#environment)
 -   [Migration](#migration)
