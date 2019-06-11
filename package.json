@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "gem-boot-js",
   "version": "1.0.0",
   "description": "Gem Boot JS (ExpressJS Boilerplate)",
@@ -51,4 +52,53 @@
     "@routers": "routers",
     "@utils": "utils"
   }
+=======
+	"name": "gemboot-framework",
+	"version": "1.0.0",
+	"description": "Gem Boot JS Framework (ExpressJS Boilerplate)",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node index.js"
+	},
+	"keywords": [
+		"gembootjs",
+		"nodejs",
+		"expressjs"
+	],
+	"author": "Angger Priyardhan Putro",
+	"license": "MIT",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"compression": "^1.7.4",
+		"debug": "^4.1.1",
+		"dotenv": "^8.0.0",
+		"express": "^4.17.0",
+		"gemboot": "^1.0.0",
+		"gemboot-generator": "0.0.6",
+		"jsonwebtoken": "^8.5.1",
+		"knex": "^0.16.5",
+		"module-alias": "^2.2.0",
+		"mysql": "^2.17.1",
+		"mysql2": "^1.6.5",
+		"sequelize": "^5.8.6"
+	},
+	"devDependencies": {
+		"nodemon": "^1.19.0"
+	},
+	"engines": {
+		"node": "10"
+	},
+	"_moduleAliases": {
+		"@root": ".",
+		"@config": "config",
+		"@controllers": "app/controllers",
+		"@models": "app/models",
+		"@repositories": "app/repositories",
+		"@services": "app/services",
+		"@middleware": "routers/middleware",
+		"@routers": "routers",
+		"@utils": "utils"
+	}
+>>>>>>> 33b50570ea449b01504d857b3d4b1b4929345614
 }
