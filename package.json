@@ -24,7 +24,7 @@
     "express": "^4.17.0",
     "gemboot": "^1.0.0",
     "gemboot-cli": "^1.1.0",
-    "gemboot-generator": "0.0.6",
+    "gemboot-generator": "0.0.7",
     "helmet": "^3.18.0",
     "jsonwebtoken": "^8.5.1",
     "knex": "^0.16.5",
