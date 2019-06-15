@@ -1,6 +1,10 @@
 module.exports = router => {
-	const debugRequest = require("debug")("app:request");
+	const GBRouter = new (require("gemboot")).GBRouter(router);
+	const requireAuth = require("@middleware/CheckAuthentication");
 
+	// Just for debugging
+	// You can remark the code if you want
+	const debugRequest = require("debug")("app:request");
 	router.use((req, res, next) => {
 		debugRequest(
 			"Request comming in: " + req.method + " " + req.originalUrl
@@ -8,12 +12,19 @@ module.exports = router => {
 		next();
 	});
 
+	// Modular Route Example
 	router.use("/auth", require("./modules/auth"));
 
-	const GBRouter = new (require("gemboot")).GBRouter(router);
-	const auth = require("@middleware/CheckAuthentication");
+	// CRUD Route Example
+	GBRouter.crud("/api/user", requireAuth, "@controllers/UserController");
 
-	GBRouter.crud("/api/user", auth, "@controllers/UserController");
+	// Normal Route Example
+	GBRouter.get(
+		"/api/hello",
+		null,
+		"@controllers/HelloController",
+		"sayHello"
+	);
 
 	return router;
 };
