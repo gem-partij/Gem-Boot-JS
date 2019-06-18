@@ -6,8 +6,7 @@ const User = require("@models/User");
 
 class UserRepository extends CrudRepository {
 	constructor() {
-		super();
-		this.model = new User();
+		super(User);
 	}
 
 	create({ email, password }) {
@@ -15,7 +14,7 @@ class UserRepository extends CrudRepository {
 
 		debug(`UserRepository::create -> email: ${email}`);
 
-		return this.orm.create({
+		return this.User.create({
 			email: email,
 			password: hashedPassword
 		});
@@ -30,7 +29,7 @@ class UserRepository extends CrudRepository {
 		if (showPassword) {
 			attributes = ["id", "username", "password"];
 		}
-		return this.orm.findOne({
+		return this.User.findOne({
 			where: { id: userid },
 			attributes: attributes
 		});
@@ -45,7 +44,7 @@ class UserRepository extends CrudRepository {
 		if (showPassword) {
 			attributes = ["id", "email", "password"];
 		}
-		return this.orm.findOne({
+		return this.User.findOne({
 			where: { email: email },
 			attributes: attributes
 		});

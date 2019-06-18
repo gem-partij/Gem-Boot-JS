@@ -26,5 +26,8 @@ module.exports = router => {
 		"sayHello"
 	);
 
+	// CRUD Route Mongo Example
+	// GBRouter.crud("/api/usermongo", null, "@controllers/UserMongoController");
+
 	return router;
 };

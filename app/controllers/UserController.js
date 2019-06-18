@@ -3,8 +3,7 @@ const UserRepository = require("@repositories/UserRepository");
 
 class UserController extends CrudController {
 	constructor() {
-		super();
-		this.repo = new UserRepository();
+		super(UserRepository);
 	}
 }
 
