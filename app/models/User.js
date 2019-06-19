@@ -5,6 +5,7 @@ class User extends Model {
 	constructor() {
 		super();
 
+		this.connectionName = "mysql";
 		this.table = "users";
 		this.attributes = {
 			email: {

@@ -4,6 +4,7 @@ class UserMongo extends Model {
 	constructor() {
 		super();
 
+		this.connectionName = "mongodb";
 		this.table = "User";
 		this.attributes = {
 			email: String,

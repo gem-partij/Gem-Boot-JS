@@ -1,6 +1,6 @@
 {
 	"name": "gem-boot-js",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Gem Boot JS Framework (ExpressJS Boilerplate)",
 	"main": "index.js",
 	"scripts": {
