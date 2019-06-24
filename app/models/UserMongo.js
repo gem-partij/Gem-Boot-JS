@@ -2,14 +2,11 @@ const Model = require("gemboot").Model;
 
 class UserMongo extends Model {
 	constructor() {
-		super();
-
-		this.connectionName = "mongodb";
-		this.table = "User";
-		this.attributes = {
+		// connectionName, tableName, attributes
+		super("mongodb", "User", {
 			email: String,
 			password: String
-		};
+		});
 	}
 }
 
