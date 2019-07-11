@@ -17,6 +17,12 @@ module.exports = router => {
 
 	// CRUD Route Example
 	GBRouter.crud("/api/user", requireAuth, "@controllers/UserController");
+	GBRouter.post(
+		"/api/user/simpan",
+		null,
+		"@controllers/UserController",
+		"simpan"
+	);
 
 	// Normal Route Example
 	GBRouter.get(
